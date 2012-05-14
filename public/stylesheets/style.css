@@ -1,0 +1,16 @@
+body {
+
+}
+
+#images img{
+  max-width: 700px;
+  max-height: 1000px;
+  margin: 10px 0px 10px 0px;
+}
+
+.separator{
+  margin: 10px;
+  padding: 10px;
+  border: gray dotted 1px;
+  color: gray;
+}

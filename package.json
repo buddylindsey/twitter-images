@@ -1,0 +1,13 @@
+{
+    "name": "application-name"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.8"
+    , "jade": "latest"
+    , "mongoose": "latest"
+    , "connect-assets": "latest"
+    , "socket.io": "latest"
+    , "coffee-script": "latest"
+  }
+}
