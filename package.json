@@ -1,13 +1,20 @@
 {
-    "name": "application-name"
-  , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "2.5.8"
-    , "jade": "latest"
-    , "mongoose": "latest"
-    , "connect-assets": "latest"
-    , "socket.io": "latest"
-    , "coffee-script": "latest"
+  "name": "application-name",
+  "version": "0.0.2-2",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.8",
+    "jade": "latest",
+    "mongoose": "latest",
+    "connect-assets": "latest",
+    "socket.io": "latest",
+    "coffee-script": "latest"
+  },
+  "subdomain": "twitter-images",
+  "scripts": {
+    "start": "app.coffee"
+  },
+  "engines": {
+    "node": "0.6.x"
   }
 }

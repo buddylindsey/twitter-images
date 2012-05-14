@@ -3,7 +3,6 @@ app = module.exports = express.createServer()
 io = require('socket.io').listen(app)
 db = require('./db')()
 mongoose = require('mongoose')
-moment = require('moment')
 
 app.configure () ->
   app.set 'views', "#{__dirname}/views"
@@ -15,13 +14,13 @@ app.configure () ->
   return
 
 app.get '/', (req, res) ->
-  res.render('index', { title: 'Ex' })
+  res.render('index', { title: 'Latest Images from Twitter...' })
   return
 
 # Sets up the main application to continuasly give back iamges
 io.sockets.on 'connection', (socket) ->
   processImages = true
-  latest_image = '4fad8f1ef4c36d0426000001'
+  latest_image = ''
   console.log('is connected')
 
   # Changes the active state of the images going back and forth

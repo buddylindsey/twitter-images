@@ -29,8 +29,8 @@ Image = () ->
       images.push img.url for img in im
       sendImages(images)
       latestImage(im[im.length - 1]._id)
+      mongoose.disconnect()
       return
-    mongoose.disconnect()
     return
 
   _firstImages = (sendImages, latestImage) ->
@@ -40,8 +40,8 @@ Image = () ->
       images.push img.url for img in im
       sendImages(images)
       latestImage(im[0]._id)
+      mongoose.disconnect()
       return
-    mongoose.disconnect()
     return
 
   return {

@@ -1,7 +1,7 @@
 $(document).ready () ->
   processImages = true
 
-  socket = io.connect('http://localhost:3000')
+  socket = io.connect(document.uri)
   
   socket.on 'images', (data) ->
     $('#images').prepend "<div class='separator'>Updates Above...</div>"
